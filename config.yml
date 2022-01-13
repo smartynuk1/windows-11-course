@@ -1,0 +1,16 @@
+title: windows 11
+description: Learning more about windows 11
+template:
+  repo: windows-11-template
+  name: windows-11
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
